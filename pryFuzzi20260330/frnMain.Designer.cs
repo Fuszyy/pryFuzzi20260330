@@ -48,9 +48,9 @@
             // tbxDaily
             // 
             this.tbxDaily.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxDaily.Location = new System.Drawing.Point(244, 214);
+            this.tbxDaily.Location = new System.Drawing.Point(291, 214);
             this.tbxDaily.Name = "tbxDaily";
-            this.tbxDaily.Size = new System.Drawing.Size(153, 26);
+            this.tbxDaily.Size = new System.Drawing.Size(63, 26);
             this.tbxDaily.TabIndex = 2;
             // 
             // lblTitle
@@ -70,9 +70,9 @@
             // 
             this.btnCafe.BackColor = System.Drawing.Color.Honeydew;
             this.btnCafe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCafe.Location = new System.Drawing.Point(244, 246);
+            this.btnCafe.Location = new System.Drawing.Point(244, 257);
             this.btnCafe.Name = "btnCafe";
-            this.btnCafe.Size = new System.Drawing.Size(153, 46);
+            this.btnCafe.Size = new System.Drawing.Size(163, 46);
             this.btnCafe.TabIndex = 5;
             this.btnCafe.Text = "+1 Cafecito...";
             this.btnCafe.UseVisualStyleBackColor = false;
