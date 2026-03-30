@@ -28,61 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDaily = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
+            this.lblAmount = new System.Windows.Forms.Label();
             this.tbxDaily = new System.Windows.Forms.TextBox();
-            this.tbxDate = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.btnCafe = new System.Windows.Forms.Button();
+            this.lblDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblDaily
+            // lblAmount
             // 
-            this.lblDaily.AutoSize = true;
-            this.lblDaily.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDaily.Location = new System.Drawing.Point(203, 171);
-            this.lblDaily.Name = "lblDaily";
-            this.lblDaily.Size = new System.Drawing.Size(97, 20);
-            this.lblDaily.TabIndex = 0;
-            this.lblDaily.Text = "Café del día:";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(203, 220);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(58, 20);
-            this.lblDate.TabIndex = 1;
-            this.lblDate.Text = "Fecha:";
+            this.lblAmount.AutoSize = true;
+            this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.Location = new System.Drawing.Point(240, 191);
+            this.lblAmount.Name = "lblAmount";
+            this.lblAmount.Size = new System.Drawing.Size(167, 20);
+            this.lblAmount.TabIndex = 0;
+            this.lblAmount.Text = "Cantidad de cafecitos:";
             // 
             // tbxDaily
             // 
             this.tbxDaily.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxDaily.Location = new System.Drawing.Point(306, 168);
+            this.tbxDaily.Location = new System.Drawing.Point(244, 214);
             this.tbxDaily.Name = "tbxDaily";
-            this.tbxDaily.Size = new System.Drawing.Size(146, 26);
+            this.tbxDaily.Size = new System.Drawing.Size(153, 26);
             this.tbxDaily.TabIndex = 2;
-            // 
-            // tbxDate
-            // 
-            this.tbxDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxDate.Location = new System.Drawing.Point(306, 220);
-            this.tbxDate.Name = "tbxDate";
-            this.tbxDate.Size = new System.Drawing.Size(146, 26);
-            this.tbxDate.TabIndex = 3;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitle.Location = new System.Drawing.Point(276, 120);
+            this.lblTitle.Location = new System.Drawing.Point(204, 124);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(84, 45);
+            this.lblTitle.Size = new System.Drawing.Size(237, 57);
             this.lblTitle.TabIndex = 4;
-            this.lblTitle.Text = "Café";
+            this.lblTitle.Text = "Café del día";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
+            // 
+            // btnCafe
+            // 
+            this.btnCafe.BackColor = System.Drawing.Color.Honeydew;
+            this.btnCafe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCafe.Location = new System.Drawing.Point(244, 246);
+            this.btnCafe.Name = "btnCafe";
+            this.btnCafe.Size = new System.Drawing.Size(153, 46);
+            this.btnCafe.TabIndex = 5;
+            this.btnCafe.Text = "+1 Cafecito...";
+            this.btnCafe.UseVisualStyleBackColor = false;
+            this.btnCafe.Click += new System.EventHandler(this.btnCafe_Click);
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(529, 9);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(36, 16);
+            this.lblDate.TabIndex = 6;
+            this.lblDate.Text = "Date";
             // 
             // frmMain
             // 
@@ -90,11 +94,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::pryFuzzi20260330.Properties.Resources.paredes_de_cafeteria_selva;
             this.ClientSize = new System.Drawing.Size(660, 413);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.tbxDate);
-            this.Controls.Add(this.tbxDaily);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.lblDaily);
+            this.Controls.Add(this.btnCafe);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.tbxDaily);
+            this.Controls.Add(this.lblAmount);
             this.Name = "frmMain";
             this.Text = "Cafetería ";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -105,11 +109,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblDaily;
-        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.TextBox tbxDaily;
-        private System.Windows.Forms.TextBox tbxDate;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnCafe;
+        private System.Windows.Forms.Label lblDate;
     }
 }
 
