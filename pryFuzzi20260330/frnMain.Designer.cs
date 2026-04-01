@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblAmount = new System.Windows.Forms.Label();
             this.tbxDaily = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -99,6 +100,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.tbxDaily);
             this.Controls.Add(this.lblAmount);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.Text = "Cafetería ";
             this.Load += new System.EventHandler(this.Form1_Load);
